@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Бургеры</title>
+</head>
+
+<body>
+  <main class="container">
+    <form action="#">
+      <h4 class="title">Select your burger</h4>
+      <div class="items">
+        <div class="item">
+          <input type="checkbox" name="size" id="s" value="small" data-cal="20" data-price="15" checked>
+          <label for="s">Small ($15.00, 20 cal)</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="size" id="xl" value="big" data-cal="40" data-price="10">
+          <label for="xl">Large ($10.00, 40 cal)</label>
+        </div>
+      </div>
+
+      <hr>
+      <h4 class="title">Stuff your burger</h4>
+      <div class="items">
+        <div class="item">
+          <input type="checkbox" name="stuffing" id="salad" value="stuffing-salad" data-cal="5" data-price="2">
+          <label for="salad">add lettuce ($2.00, +5 cal)</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="stuffing" id="cheese" value="stuffing-cheese" data-cal="20" data-price="2" checked>
+          <label for="cheese">add cheese ($2.00, +20 cal)</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="stuffing" id="potatoes" value="stuffing-potatoes" data-cal="5" data-price="1.5">
+          <label for="potatoes">add french fries ($1.50, +60 cal)</label>
+        </div>
+      </div>
+
+      <hr>
+      <h4 class="title">Extra topping</h4>
+      <div class="items">
+        <div class="item">
+          <input type="checkbox" name="topping" id="condiment" value="topping-prep" data-cal="0" data-price="0">
+          <label for="condiment">add spices ( +0 калорий)</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="topping" id="mayonnaise" value="topping-moes" data-cal="5" data-price="0">
+          <label for="mayonnaise">add mayon ( +5 calories)</label>
+        </div>
+      </div>
+
+      <button class="btn">Place order</button>
+
+      <hr>
+
+      <div class="sum">
+        <p class="sum__price">Total: <span id="sum__price">0</span></p>
+        <p class="sum__cal">Calories: <span id="sum__cal">0</span> </p>
+      </div>
+    </form>
+  </main>
+
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
